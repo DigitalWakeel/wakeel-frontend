@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900">Digital Wakeel</h1>
+              <Link href="/" className="text-2xl font-bold text-gray-900">Digital Wakeel</Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-gray-700 hover:text-gray-900 transition-colors">Features</a>
@@ -16,9 +17,12 @@ export default function Home() {
               <a href="#about" className="text-gray-700 hover:text-gray-900 transition-colors">About</a>
               <a href="#team" className="text-gray-700 hover:text-gray-900 transition-colors">Team</a>
               <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors">Contact</a>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
-                Get Started
-              </button>
+              <Link
+                href="/portal"
+                className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+              >
+                Try Now
+              </Link>
             </div>
           </div>
         </div>
@@ -40,9 +44,12 @@ export default function Home() {
               Streamline your research workflow and connect with clients through our integrated marketplace.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
-                Get Started Free
-              </button>
+              <Link
+                href="/portal"
+                className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl text-center"
+              >
+                Try Now
+              </Link>
               <button className="w-full sm:w-auto bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold border-2 border-gray-200 hover:border-gray-300 transition-all">
                 Watch Demo
               </button>
@@ -395,7 +402,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               What Our Users Say
             </h2>
-              <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600">
               Hear from lawyers, law students, and clients who use Digital Wakeel for research and legal services
             </p>
           </div>
@@ -443,13 +450,16 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready To Transform Your Legal Practice?
           </h2>
-              <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-blue-100 mb-8">
             Discover how Digital Wakeel can transform your legal research workflow and help you serve clients better.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
-              Schedule a Demo
-            </button>
+            <Link
+              href="/portal"
+              className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg text-center"
+            >
+              Try Now
+            </Link>
             <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-all">
               Contact Us
             </button>
@@ -462,7 +472,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-4">Digital Wakeel</h3>
+              <Link href="/" className="text-2xl font-bold text-white mb-4 block">Digital Wakeel</Link>
               <p className="text-gray-400">
                 Pakistan's first AI-powered legal research platform for lawyers and law students, transforming how legal research is conducted.
               </p>
@@ -472,7 +482,7 @@ export default function Home() {
               <ul className="space-y-2">
                 <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
                 <li><a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
+                <li><Link href="/portal" className="hover:text-white transition-colors">Try Portal</Link></li>
               </ul>
             </div>
             <div>
